@@ -1,0 +1,48 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  https://leapfinance.com/ , https://leapfinance.com/loan-features/usa ,
+  https://leapfinance.com/how-it-works/usa , https://leapfinance.com/pricing —
+  searched 2026-08-25.
+name: Leap Finance plans and pricing
+description: >-
+  Leap Finance publishes no API plans, tiers, quotas or developer pricing, because it
+  sells no API. Its commercial product is a consumer education loan, priced per
+  borrower after an underwriting decision, not from a published rate card.
+
+plan_count: 0
+
+evidence:
+  - url: https://leapfinance.com/pricing
+    status: 200
+    finding: >-
+      Soft-404. Returns HTTP 200 with the Next.js application shell; the rendered
+      body reads "Oops! The page you were looking for doesn't exist." No pricing page
+      exists at this path.
+  - url: https://leapfinance.com/loan-features/usa
+    status: 200
+    finding: >-
+      Real page describing loan product features. Markets the loan qualitatively —
+      collateral-free, covers tuition and living costs — and directs the visitor to a
+      "Get Loan Offer" application flow rather than publishing rates or fees.
+  - url: https://leapfinance.com/how-it-works/usa
+    status: 200
+    finding: Real page describing the borrower application journey. No published rates.
+  - url: https://leapfinance.com/
+    status: 200
+    finding: >-
+      Homepage markets "Low-Interest Rate" without stating a rate, and routes to the
+      loan-offer application.
+
+plans: []
+
+note: >-
+  This is not a "contact sales" gate on an API — it is a lending product. An interest
+  rate on an unsecured education loan is set per applicant by underwriting, so the
+  absence of a published rate card is normal for the product category and is not a
+  transparency failure of the kind plan_count is designed to detect. Recorded as
+  plan_count: 0 with this explanation rather than omitted, so the zero is legible as
+  "checked, genuinely none" rather than "not checked".
+
+api_pricing_published: false
+developer_free_tier: false

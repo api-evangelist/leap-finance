@@ -1,0 +1,173 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  Direct unauthenticated HTTPS probes of /.well-known/* on every Leap Finance Inc.
+  host discovered by DNS enumeration and sitemap walk (2026-08-25).
+name: Leap Finance well-known documents
+description: >-
+  Probe record for RFC 8615 /.well-known/ documents across the hosts operated by
+  Leap Finance Inc. Two real documents are served, both by the company's own Auth0
+  identity tenant at auth.leapfinance.com: an OpenID Connect discovery document and
+  the identical RFC 8414 OAuth 2.0 authorization server metadata document. Every
+  other probed path is absent.
+
+notes:
+  - >-
+    SOFT-404 WARNING — leapfinance.com is a Next.js application with a catch-all
+    route that answers HTTP 200 with the same ~13KB HTML application shell for every
+    unknown path, including all /.well-known/* paths. Those 200s are NOT documents
+    and are recorded here as misses with status 200 and file: null. Confirmed by
+    fetching https://leapfinance.com/privacy-policy, which also returns 200 while
+    the rendered body reads "Oops! The page you were looking for doesn't exist."
+  - >-
+    leapscholar.com returns honest HTTP 404s for absent paths, so its misses are
+    real 404s rather than soft-404s. leapscholar.com is maintained by Leap Finance
+    Inc., stated verbatim on https://leapfinance.com/about — "©Leap Finance Inc.
+    maintains www.leapscholar.com to offer counselling and related services for
+    study abroad aspirants".
+  - >-
+    api.leapscholar.com refuses unauthenticated requests to /.well-known/* with
+    HTTP 403 and no body, so those paths are unreadable rather than confirmed absent.
+  - >-
+    No security.txt is served on any host, so no SecurityTxt pointer is emitted.
+    No /.well-known/api-catalog is served on any host.
+
+hosts:
+  - host: auth.leapfinance.com
+    note: >-
+      Leap Finance Inc.'s own Auth0 identity tenant (CNAME
+      auth-leapfinance-cd-gp8aezmavuzbqnge.edge.tenants.auth0.com). Serves the only
+      two real well-known documents found for this company.
+    documents:
+      - path: /.well-known/openid-configuration
+        status: 200
+        content_type: application/json; charset=utf-8
+        bytes: 2523
+        file: leap-finance-openid-configuration.json
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        content_type: application/json; charset=utf-8
+        bytes: 2523
+        file: leap-finance-oauth-authorization-server.json
+        note: >-
+          Byte-identical to the OpenID Connect discovery document; Auth0 serves the
+          same payload at both the RFC 8414 and OIDC discovery locations.
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+
+  - host: leapfinance.com
+    note: >-
+      Next.js marketing and loan-application site. Catch-all route returns HTTP 200
+      with an HTML application shell for every path below; none is a document.
+    documents:
+      - path: /.well-known/security.txt
+        status: 200
+        content_type: text/html; charset=utf-8
+        file: null
+        note: soft-404 — HTML application shell, not a document
+      - path: /.well-known/openid-configuration
+        status: 200
+        content_type: text/html; charset=utf-8
+        file: null
+        note: soft-404 — HTML application shell, not a document
+      - path: /.well-known/oauth-authorization-server
+        status: 200
+        content_type: text/html; charset=utf-8
+        file: null
+        note: soft-404 — HTML application shell, not a document
+      - path: /.well-known/api-catalog
+        status: 200
+        content_type: text/html; charset=utf-8
+        file: null
+        note: soft-404 — HTML application shell, not a document
+      - path: /.well-known/ai-plugin.json
+        status: 200
+        content_type: text/html; charset=utf-8
+        file: null
+        note: soft-404 — HTML application shell, not a document
+      - path: /.well-known/agent-card.json
+        status: 200
+        content_type: text/html; charset=utf-8
+        file: null
+        note: soft-404 — HTML application shell, not a document
+      - path: /.well-known/agent.json
+        status: 200
+        content_type: text/html; charset=utf-8
+        file: null
+        note: soft-404 — HTML application shell, not a document
+
+  - host: leapscholar.com
+    note: >-
+      Study-abroad counselling property maintained by Leap Finance Inc. Returns
+      honest 404s for absent paths. Serves a real /llms.txt (saved to llms/).
+    documents:
+      - path: /.well-known/security.txt
+        status: 404
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 404
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 404
+        file: null
+      - path: /.well-known/api-catalog
+        status: 404
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 404
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 404
+        file: null
+      - path: /.well-known/agent.json
+        status: 404
+        file: null
+
+  - host: api.leapscholar.com
+    note: >-
+      Private application backend (Spring Boot). Rejects unauthenticated
+      /.well-known/* requests with HTTP 403 and an empty body — unreadable, not
+      confirmed absent.
+    documents:
+      - path: /.well-known/security.txt
+        status: 403
+        file: null
+      - path: /.well-known/openid-configuration
+        status: 403
+        file: null
+      - path: /.well-known/oauth-authorization-server
+        status: 403
+        file: null
+      - path: /.well-known/api-catalog
+        status: 403
+        file: null
+      - path: /.well-known/ai-plugin.json
+        status: 403
+        file: null
+      - path: /.well-known/agent-card.json
+        status: 403
+        file: null
+      - path: /.well-known/agent.json
+        status: 403
+        file: null
+
+summary:
+  hosts_probed: 4
+  documents_served: 2
+  security_txt: false
+  api_catalog: false
+  agent_card: false
+  openid_configuration: true

@@ -1,0 +1,30 @@
+generated: '2026-08-25'
+method: searched
+source: https://leapscholar.com/llms.txt
+name: Leap Finance llms.txt provenance
+description: >-
+  Provenance record for llms/leap-finance-llms.txt, which is saved VERBATIM and
+  therefore carries no frontmatter of its own.
+
+file: leap-finance-llms.txt
+fetched: '2026-08-25'
+url: https://leapscholar.com/llms.txt
+http_status: 200
+content_type: text/plain; charset=utf-8
+bytes: 24088
+
+ownership_note: >-
+  This llms.txt is served by leapscholar.com, not by leapfinance.com. It is recorded
+  against Leap Finance because Leap Finance Inc. states on its own About page that it
+  maintains that property: "©Leap Finance Inc. maintains www.leapscholar.com to offer
+  counselling and related services for study abroad aspirants"
+  (https://leapfinance.com/about, HTTP 200, fetched 2026-08-25). leapfinance.com
+  itself serves no llms.txt — https://leapfinance.com/llms.txt returns HTTP 200 with
+  the site's HTML application shell (a soft-404), not a document.
+
+content_note: >-
+  The document describes LeapScholar's consumer study-abroad counselling surface —
+  country guides, SOP/IELTS resources, counsellor booking and university pages. It
+  names no API, no endpoint and no machine-readable specification, and it does not
+  reference leapfinance.com. It is a content index for AI agents, not a developer
+  artifact.

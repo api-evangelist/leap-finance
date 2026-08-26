@@ -1,0 +1,129 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  Live probes of leapfinance.com, leapscholar.com, auth.leapfinance.com and
+  api.leapscholar.com, plus the OIDC discovery document saved to well-known/.
+  2026-08-25. No developer documentation exists to search.
+name: Leap Finance API conventions
+description: >-
+  Cross-cutting runtime semantics for Leap Finance Inc. Almost every dimension below
+  is `undocumented` for the same single reason: Leap Finance operates no public API
+  and publishes no developer documentation, so there are no conventions for a
+  third-party integrator to follow. This artifact records that absence precisely
+  rather than leaving it implied.
+
+applicability: >-
+  Leap Finance exposes no public write surface, no public read surface, and no
+  documented contract of any kind. The reversibility, idempotency and dry-run
+  dimensions below are therefore `na` — an honest not-applicable, because there is no
+  caller-invocable operation whose safety they could describe.
+
+authentication:
+  style: oauth2 / openIdConnect (end-user identity only)
+  documented: false
+  detail: >-
+    An Auth0 tenant at auth.leapfinance.com serves a complete OIDC discovery
+    document, but it authenticates borrowers and staff into first-party web
+    applications. No API accepts these tokens publicly.
+  reference: authentication/leap-finance-authentication.yml
+
+idempotency:
+  supported: na
+  documented: false
+  header: null
+  scope: null
+  retention: null
+  detail: >-
+    No idempotency key header, retry semantics or replay window is documented, and
+    there is no public write operation for one to apply to. No `Idempotency` pointer
+    is emitted in apis.yml — emitting one would assert a safety guarantee the company
+    has never made.
+
+reversibility:
+  grade: na
+  write_surface: false
+  detail: >-
+    Leap Finance publishes no caller-invocable write operation, so there is no action
+    an agent could take and therefore nothing to reverse. Reversibility is not scored
+    against this provider and no window is asserted. The consumer loan application at
+    leapfinance.com/login is a human web flow, not an API; whatever cancellation or
+    withdrawal rights attach to a loan application are contractual and governed by the
+    terms at https://leapfinance.com/terms, not by an API operation.
+  operations: []
+  windows: []
+  note: >-
+    No reversal window is stated anywhere in the company's published material, and
+    none is invented here. Asserting an unstated window on a lending product is the
+    one error in this artifact that could cost a borrower real money.
+
+dry_run_mode:
+  supported: na
+  detail: No public operations, so nothing to rehearse. No sandbox or test mode is published.
+
+pagination:
+  style: undocumented
+  params: []
+  response_fields: []
+  detail: No contract or reference describes a collection representation.
+
+field_expansion:
+  supported: undocumented
+sparse_fieldsets:
+  supported: undocumented
+metadata:
+  supported: undocumented
+
+request_id_tracing:
+  supported: partial
+  detail: >-
+    api.leapscholar.com returns no request-id or correlation-id response header on
+    the unauthenticated 400/403 responses observed. leapfinance.com embeds a Sentry
+    trace context (_sentryTraceData) in its Next.js page props, which is internal
+    front-end telemetry rather than an API tracing convention available to a caller.
+
+versioning:
+  scheme: undocumented
+  detail: >-
+    api.leapscholar.com exposes a /v1/ path prefix (probing /v1/openapi.json returned
+    403 rather than the 400 that unversioned paths return, so the prefix is routed),
+    which implies URI-path versioning. No versioning policy is published to confirm
+    it. The dormant public repository github.com/leapfinance/spring-api-versioning
+    (last updated 2021-09-30) suggests the engineering team addressed API versioning
+    internally, but nothing about the policy is public.
+  reference: lifecycle/leap-finance-lifecycle.yml
+
+error_envelope:
+  format: rfc9457
+  media_type: application/problem+json
+  consistent: false
+  detail: >-
+    Observed 400s use an RFC 9457 problem detail; observed 403s return a zero-length
+    body with no media type. The same API answers in two different error formats.
+  reference: errors/leap-finance-problem-types.yml
+
+rate_limit_signaling:
+  headers: []
+  documented: false
+  detail: >-
+    No X-RateLimit-*, RateLimit-* or Retry-After header was observed on any
+    unauthenticated response from api.leapscholar.com or leapfinance.com.
+  reference: rate-limits/leap-finance-rate-limits.yml
+
+security_headers_observed:
+  api.leapscholar.com:
+    x-content-type-options: nosniff
+    x-frame-options: DENY
+    x-xss-protection: '0'
+    cache-control: no-cache, no-store, max-age=0, must-revalidate
+  leapfinance.com:
+    strict-transport-security: max-age=63072000
+    note: See security/leap-finance-domain-security.yml for the full TLS/DNS posture.
+
+robots_policy:
+  leapfinance.com: >-
+    User-Agent: * / Disallow: /applications — the loan application path is excluded
+    from crawling. Sitemap declared at https://leapfinance.com/sitemap.xml.
+  leapscholar.com: >-
+    Allow-list style policy permitting the main country landing pages and disallowing
+    a number of country subtrees.
+  auth.leapfinance.com: 'User-agent: * / Disallow: / — the identity tenant excludes all crawling.'

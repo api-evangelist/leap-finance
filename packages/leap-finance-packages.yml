@@ -1,0 +1,146 @@
+generated: '2026-08-25'
+method: searched
+source: >-
+  https://registry.npmjs.org/-/v1/search?text=leapfinance and per-package metadata
+  from https://registry.npmjs.org/<pkg> (unauthenticated), plus
+  https://api.github.com/orgs/leapfinance/repos — searched 2026-08-25.
+name: Leap Finance packages
+description: >-
+  First-party packages published by Leap Finance Inc. under the @leapfinance npm
+  scope, plus one unscoped npm package that names the company in its description.
+  NONE of these is an API client SDK — they are internal frontend engineering
+  libraries (a React component library, shared frontend utilities, an auth helper,
+  a lint config). Leap Finance publishes no API client library in any language.
+
+registries_searched:
+  - registry: npm
+    endpoint: https://registry.npmjs.org/-/v1/search
+    result: 5 first-party packages found (@leapfinance scope + eslint-plugin-lf-styleguide)
+  - registry: PyPI
+    endpoint: https://pypi.org/pypi/{leapfinance,leapscholar}/json
+    result: 404 — no package
+  - registry: RubyGems
+    result: no first-party package found
+  - registry: crates.io
+    result: no first-party package found
+  - registry: NuGet
+    result: no first-party package found
+  - registry: Maven Central
+    result: no first-party package found
+  - registry: pkg.go.dev
+    result: no first-party package found
+  - registry: Packagist
+    result: no first-party package found
+
+packages:
+  - name: '@leapfinance/frontend-commons'
+    registry: npm
+    url: https://www.npmjs.com/package/@leapfinance/frontend-commons
+    official: true
+    kind: internal-frontend-library
+    language: JavaScript/TypeScript
+    license: MIT
+    version: 4.4.3
+    published: '2023-10-05'
+    first_published: '2023-02-22'
+    release_count: 225
+    description: null
+    note: >-
+      No description published on the registry. Most actively released package in the
+      scope (225 versions) but last published 2023-10-05, nearly three years stale as
+      of this probe. Not an API client.
+
+  - name: '@leapfinance/ui-kit'
+    registry: npm
+    url: https://www.npmjs.com/package/@leapfinance/ui-kit
+    official: true
+    kind: internal-frontend-library
+    language: JavaScript/TypeScript
+    license: MIT
+    version: 1.0.2
+    published: '2022-11-22'
+    first_published: '2022-07-19'
+    release_count: 19
+    description: Reusable react component library for Leap Organisation
+    source_repository: https://bitbucket.org/leapfinance/ui-kit.git
+    note: >-
+      Registry metadata points source at a private Bitbucket repository, not a public
+      one. Internal design system, not an embeddable API-consumer component library.
+
+  - name: '@leapfinance/auth-kit'
+    registry: npm
+    url: https://www.npmjs.com/package/@leapfinance/auth-kit
+    official: true
+    kind: internal-frontend-library
+    language: JavaScript/TypeScript
+    license: MIT
+    version: 0.1.7
+    published: '2023-09-11'
+    first_published: '2022-07-28'
+    release_count: 17
+    description: null
+    note: >-
+      Name suggests a client-side authentication helper, consistent with the Auth0
+      tenant at auth.leapfinance.com, but the package publishes no description and no
+      public repository, so its surface cannot be confirmed without installing it. Not
+      documented as a public SDK anywhere on the company's site.
+
+  - name: eslint-plugin-lf-styleguide
+    registry: npm
+    url: https://www.npmjs.com/package/eslint-plugin-lf-styleguide
+    official: true
+    kind: lint-config
+    language: JavaScript
+    license: ISC
+    version: 0.0.4
+    published: '2024-10-21'
+    first_published: '2024-10-04'
+    release_count: 3
+    description: It is a style guide for frontend codebase at leapfinance
+    note: >-
+      Unscoped, but self-identifies as Leap Finance's internal frontend style guide.
+      Most recently published first-party package in any registry.
+
+  - name: '@leapfinance/sample-package'
+    registry: npm
+    url: https://www.npmjs.com/package/@leapfinance/sample-package
+    official: true
+    kind: placeholder
+    language: JavaScript
+    license: MIT
+    version: 1.0.0
+    published: '2023-06-29'
+    first_published: '2023-06-29'
+    release_count: 1
+    description: null
+    note: >-
+      Single-version scope placeholder, published to reserve or test the @leapfinance
+      npm scope. No functional surface.
+
+source_repositories:
+  - url: https://github.com/leapfinance
+    org: leapfinance
+    public_repos: 2
+    created: '2021-09-30'
+    note: >-
+      The public GitHub org holds two repositories, neither an SDK and both dormant —
+      leapfinance/spring-api-versioning (last updated 2021-09-30, no description) and
+      leapfinance/chrononJs (TypeScript, "JavaScript Date Lib", last updated
+      2022-02-16). None of the published npm packages is built in this org; ui-kit
+      points at a private Bitbucket instead.
+
+findings:
+  official_packages: 5
+  api_client_sdks: 0
+  most_recent_first_party_release: '2024-10-21'
+  decay_signal: >-
+    Every package in the @leapfinance npm scope was last published in 2022 or 2023,
+    and the newest first-party release in any registry is a lint config from
+    2024-10-21. The public GitHub org has not seen a repository update since
+    2022-02-16. This is an internal-tooling footprint left in public registries, not a
+    maintained developer distribution.
+  sdk_pointer_withheld: >-
+    No `type: SDKs` pointer is emitted in apis.yml. sdk_count is meant to measure
+    first-party client libraries for a provider's API; Leap Finance publishes no
+    public API and none of these packages wraps one. Emitting SDKs here would credit
+    the company with a developer distribution it does not have.

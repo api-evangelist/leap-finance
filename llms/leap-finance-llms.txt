@@ -1,0 +1,475 @@
+# LeapScholar
+
+> LeapScholar is India's most trusted study abroad counselling platform, helping
+> Indian students get admitted to 1,500+ universities across USA, UK, Canada,
+> Australia, Germany, Ireland, UAE, Singapore, New Zealand, France, and Italy.
+> With a 97% admission success rate and 2 lakh+ students guided, LeapScholar
+> provides end-to-end support covering free profile evaluation, university
+> shortlisting, application building, SOP and LOR assistance, IELTS coaching
+> trusted by 200,000+ students, visa guidance, education loan support, and
+> scholarship discovery. Headquartered in Bengaluru, India with offices across
+> major Indian cities and an international office in Singapore.
+
+LeapScholar's primary audience is Indian students (undergraduate and postgraduate)
+planning to study abroad — especially targeting USA (MS, STEM, MBA, UG), UK
+(1-year Master's, Graduate Route visa), Canada (SDS, PGWP, PR pathways),
+Australia (PR-focused degrees), Germany (tuition-free public universities),
+Ireland (1-year Master's, Graduate Visa), UAE (global university campuses,
+tax-free careers), Singapore (world-ranked research universities), France
+(affordable public universities, Campus France), New Zealand (work-friendly
+student visas), and Italy (English-taught programs, low tuition fees).
+The platform combines AI-powered university shortlisting with 1:1 expert
+counselling, free IELTS masterclasses, academic grade conversion calculators,
+scholarship guidance, and a strong peer community. Students receive an average
+of 6 university acceptances. LeapScholar is especially strong in IELTS
+preparation with expert trainers, and in visa
+support with a proven track record across complex student profiles.
+
+
+## Core Services
+
+- [Study Abroad Counselling – Homepage](https://leapscholar.com/):
+  Free profile evaluation and end-to-end admissions support for Indian
+  students applying to universities in USA, UK, Canada, Australia, Ireland,
+  UAE, Singapore, Germany, New Zealand, France, and Italy. Covers university
+  shortlisting, application building, SOP and LOR writing, interview prep,
+  and visa guidance. Students receive an average of 6 admit letters.
+
+- [Talk to a Counsellor](https://leapscholar.com/counsellors):
+  Book a free 1:1 session with LeapScholar's expert study abroad counsellors.
+  Personalised guidance on best-fit courses, universities, and countries
+  based on individual academic profiles, budget, and career goals.
+
+- [Statement of Purpose (SOP)](https://leapscholar.com/statement-of-purpose):
+  SOP writing guidance, samples, and expert review for study abroad
+  applications. Covers SOP for Masters, MBA, and PhD programs at
+  international universities.
+
+- [SOP for Masters](https://leapscholar.com/statement-of-purpose/masters):
+  Dedicated SOP writing guide, templates, and samples for Master's degree
+  applications at top global universities across USA, UK, Canada, and
+  Australia.
+
+- [SOP for MBA](https://leapscholar.com/statement-of-purpose/mba):
+  SOP writing guide and expert-reviewed samples for MBA program applications
+  at top global business schools — covers structure, tone, and
+  personalisation strategies.
+
+- [SOP for PhD](https://leapscholar.com/statement-of-purpose/phd):
+  Statement of Purpose guide and examples for PhD program applications —
+  covers research intent, academic background, supervisor alignment, and
+  long-term career goals.
+
+- [Leap Digest](https://leapscholar.com/digest):
+  LeapScholar's newsletter and digest covering latest study abroad news,
+  visa policy updates, university admission changes, exam fee revisions,
+  and scholarship announcements relevant to Indian students.
+
+- [Events](https://leapscholar.com/events):
+  Free study abroad events, webinars, university fairs, and IELTS
+  masterclasses hosted by LeapScholar for Indian students — available
+  online and in-person across major Indian cities.
+
+- [About Us](https://leapscholar.com/about-us):
+  LeapScholar's company background, founding story, mission of helping
+  Indian students achieve global education goals, team overview, office
+  locations, and key milestones since founding.
+
+- [IELTS Success Stories & Testimonials](https://leapscholar.com/testimonials/ielts):
+  Real testimonials from Indian students who achieved 7+ band IELTS
+  scores with LeapScholar's coaching — covering preparation experience,
+  trainer feedback, and band score improvements across all four sections.
+
+- [Study Abroad Success Stories & Testimonials](https://leapscholar.com/testimonials/scholar):
+  Real success stories from LeapScholar students who got admitted to
+  top universities abroad — covering counselling experience, visa
+  outcomes, university acceptances, and overall study abroad journey.
+
+
+## Study Destinations — Country Guides
+
+- [Study in USA](https://leapscholar.com/usa):
+  Comprehensive hub for Indian students planning to study in the USA
+  in 2026-27. Covers top universities, popular courses (MS, MBA, STEM,
+  UG), tuition fees, cost of living, GRE/GMAT/SAT requirements, F1
+  student visa process, OPT/CPT work options, and scholarships.
+
+- [Study in UK](https://leapscholar.com/uk):
+  Complete guide for Indian students planning to study in the UK. Covers
+  top universities, 1-year Master's programs, tuition fees, IELTS UKVI
+  requirements, Student Route visa process, Graduate Route visa for
+  post-study work rights, and available scholarships.
+
+- [Study in Canada](https://leapscholar.com/canada):
+  Canada study abroad hub for Indian students. Covers top universities
+  and colleges, SDS (Student Direct Stream), PGWP work permit, PR
+  pathways, IELTS score requirements, student permit process, tuition
+  fees, and cost of living.
+
+- [Study in Ireland](https://leapscholar.com/ireland):
+  Ireland study abroad guide for Indian students. Covers top universities
+  including UCD and Trinity College Dublin, 1-year Master's programs,
+  student visa requirements, IELTS scores, tuition fees, cost of living,
+  and Graduate Visa for post-study work.
+
+- [Study in Australia](https://leapscholar.com/australia):
+  Australia study abroad hub for Indian students. Covers PR-pathway
+  degrees, top universities, student visa subclass 500, tuition fees,
+  cost of living by city, part-time work rights, post-study work visa,
+  and scholarships.
+
+- [Study in Germany](https://leapscholar.com/germany):
+  Germany study abroad guide for Indian students. Covers tuition-free
+  public universities, engineering and STEM programs, APS certificate
+  requirements, blocked account, German language requirements, winter
+  and summer intakes, and student visa application process.
+
+- [Study in France](https://leapscholar.com/france):
+  France study abroad guide for Indian students. Covers top public and
+  private universities, tuition fees, English-taught programs, French
+  student visa (VLS-TS), Campus France application process, cost of
+  living, and post-study work options.
+
+- [Study in New Zealand](https://leapscholar.com/new-zealand):
+  New Zealand study abroad guide for Indian students. Covers top
+  QS-ranked universities, work-friendly student visas, part-time work
+  rights during study, tuition fees, cost of living, and post-study
+  work visa options.
+
+- [Study in Italy](https://leapscholar.com/italy):
+  Italy study abroad guide for Indian students. Covers top universities,
+  English-taught programs, tuition fees, Italian student visa process,
+  cost of living by city, and scholarship opportunities for international
+  students.
+
+
+## Top Universities by Country
+
+- [Top Universities in USA](https://leapscholar.com/usa/universities-colleges-list):
+  Comprehensive list of top universities and colleges in the USA for
+  Indian students — covering rankings, acceptance rates, popular courses,
+  tuition fees, and admission requirements across Ivy League and state
+  universities.
+
+- [Top Universities in UK](https://leapscholar.com/uk/universities-colleges-list):
+  List of top UK universities for Indian students — covering Russell
+  Group universities, QS rankings, tuition fees, course offerings, and
+  admission requirements for undergraduate and postgraduate programs.
+
+- [Top Universities in Canada](https://leapscholar.com/canada/universities-colleges-list):
+  Comprehensive list of top Canadian universities and colleges for Indian
+  students — covering rankings, tuition fees, popular programs, co-op
+  options, and admission requirements.
+
+- [Top Universities in Australia](https://leapscholar.com/australia/universities-colleges-list):
+  List of top Australian universities for Indian students — covering
+  Group of Eight universities, QS rankings, tuition fees, PR-pathway
+  programs, and admission requirements.
+
+- [Top Universities in Ireland](https://leapscholar.com/ireland/universities-colleges-list):
+  List of top Irish universities and institutes of technology for Indian
+  students — covering rankings, tuition fees, popular 1-year Master's
+  programs, and admission requirements.
+
+
+## Exams & Test Preparation
+
+- [IELTS](https://leapscholar.com/exams/ielts):
+  Complete IELTS hub for Indian students. Covers exam format (Academic
+  and General Training), band score requirements by country and
+  university, registration fees, test dates, preparation strategies,
+  live coaching, and free mock tests. Trusted by 200,000+ students
+  targeting 7+ band.
+
+- [TOEFL](https://leapscholar.com/exams/toefl):
+  TOEFL exam hub covering exam format, section-wise scoring, score
+  requirements by country and university, registration process,
+  preparation resources, and how TOEFL compares to IELTS for study
+  abroad applications.
+
+- [SAT](https://leapscholar.com/exams/sat):
+  SAT exam hub for Indian students targeting undergraduate admissions
+  at top global universities. Covers exam format, section-wise strategy,
+  score requirements by university, Ivy League-guided coaching, and
+  target score of 1500+.
+
+- [PTE](https://leapscholar.com/exams/pte):
+  PTE Academic exam hub covering exam format, computer-based testing,
+  scores accepted by universities and visa authorities across UK,
+  Australia, Canada, and New Zealand, preparation tips, and comparison
+  with IELTS.
+
+- [Duolingo English Test](https://leapscholar.com/exams/duolingo):
+  Complete guide to the Duolingo English Test (DET) — adaptive exam
+  format, scoring system, universities and countries accepting DET,
+  how it compares to IELTS and TOEFL, registration process, and
+  preparation tips for Indian students.
+
+- [GRE](https://leapscholar.com/exams/gre):
+  GRE exam hub for Indian students applying to graduate programs in
+  USA and Canada. Covers exam format (Verbal, Quant, AWA), section-wise
+  scoring, score requirements by university and program, preparation
+  strategy, and study resources.
+
+- [GMAT](https://leapscholar.com/exams/gmat):
+  GMAT exam hub for MBA and business school applicants. Covers GMAT
+  Focus Edition format, section-wise scoring, top b-school score
+  requirements, preparation resources, and coaching for Indian students.
+
+
+## IELTS Preparation & Practice Tests
+
+- [IELTS Preparation Online](https://leapscholar.com/exams/ielts/preparation-online):
+  Online IELTS preparation classes with live sessions, expert trainer
+  support, structured study material, and personalised performance
+  feedback for Indian students targeting 7+ band.
+
+- [Free IELTS Mock Test](https://leapscholar.com/exams/ielts/mock-test):
+  Free full-length IELTS mock test online covering all 4 sections —
+  Listening, Reading, Writing, and Speaking — with detailed band score
+  analysis and section-wise performance feedback.
+
+- [IELTS Practice Test](https://leapscholar.com/exams/ielts/practice-test):
+  Free IELTS practice tests for all four sections with real exam-style
+  questions, timed conditions, and answer explanations to help Indian
+  students identify weak areas and improve band scores.
+
+- [IELTS Speaking Practice Test](https://leapscholar.com/exams/ielts/practice-test/speaking):
+  Free IELTS Speaking practice test with Part 1, Part 2 (cue card), and
+  Part 3 question sets, model answers, examiner tips, and band descriptor
+  guidance for Indian students.
+
+- [IELTS Writing Practice Test](https://leapscholar.com/exams/ielts/practice-test/writing):
+  Free IELTS Writing practice test covering Task 1 (Academic and General)
+  and Task 2 essay questions with model answers, band scoring criteria,
+  and expert writing tips.
+
+- [IELTS Reading Practice Test](https://leapscholar.com/exams/ielts/practice-test/reading):
+  Free IELTS Reading practice test with Academic and General Training
+  passages, all question types, timed conditions, and answer explanations
+  to improve reading band scores.
+
+- [IELTS Listening Practice Test](https://leapscholar.com/exams/ielts/practice-test/listening):
+  Free IELTS Listening practice test with all 4 section recordings,
+  question types, timed playback, and answer keys to help Indian students
+  prepare effectively for the listening component.
+
+- [IELTS Speaking Cue Cards](https://leapscholar.com/blog/ielts-speaking-cue-cards-topics-sample-answers/):
+  Comprehensive guide to IELTS Speaking Part 2 cue card topics with
+  sample band 7+ answers, follow-up questions, vocabulary suggestions,
+  and timing strategies for Indian students.
+
+
+## Academic Grade Calculators
+
+- [CGPA to GPA Calculator](https://leapscholar.com/calculators/cgpa-to-gpa):
+  Free online calculator to convert Indian university CGPA to GPA on a
+  4.0 scale — essential for study abroad applications to USA, Canada, and
+  other destinations. Includes conversion formula and university-wise
+  accepted GPA ranges.
+
+- [CGPA to Percentage Calculator](https://leapscholar.com/calculators/cgpa-to-percentage):
+  Free calculator to convert CGPA to percentage for Indian students —
+  supports university-specific conversion formulas including VTU, Mumbai
+  University, Anna University, and standard 10-point scale.
+
+- [CGPA to Marks Calculator](https://leapscholar.com/calculators/cgpa-to-marks):
+  Free calculator to convert CGPA to total marks for Indian students —
+  useful for filling study abroad application forms that require marks
+  instead of CGPA.
+
+- [SGPA to Percentage Calculator](https://leapscholar.com/calculators/sgpa-to-percentage):
+  Free calculator to convert semester SGPA to percentage — supports
+  multiple Indian university grading systems including VTU, Mumbai
+  University, and standard 10-point scale.
+
+- [SGPA to CGPA Calculator](https://leapscholar.com/calculators/sgpa-to-cgpa):
+  Free calculator to convert SGPA to cumulative CGPA for Indian students
+  — useful for computing overall academic performance across multiple
+  semesters for study abroad applications.
+
+- [Percentage to Marks Calculator](https://leapscholar.com/calculators/percentage-to-marks):
+  Free tool to convert percentage scores to equivalent marks out of total
+  — helpful for Indian students completing international university
+  application forms requiring marks-based academic history.
+
+- [Percentage to GPA Calculator](https://leapscholar.com/calculators/percentage-to-gpa):
+  Free calculator to convert Indian percentage scores to GPA on a 4.0
+  scale — essential for study abroad applications that require GPA
+  format instead of percentage.
+
+- [GPA Calculator](https://leapscholar.com/calculators/gpa-calculator):
+  Free GPA calculator for Indian students — compute semester or annual
+  GPA based on course grades and credit hours to meet study abroad
+  application requirements.
+
+- [Cumulative GPA Calculator](https://leapscholar.com/calculators/cumulative-gpa-calculator):
+  Free cumulative GPA calculator — calculate overall CGPA across all
+  semesters based on individual semester GPAs and credit hours, formatted
+  for international university applications.
+
+
+## Blog & Knowledge Content
+
+LeapScholar publishes a comprehensive study abroad knowledge base at
+leapscholar.com/blog covering university guides, visa how-tos, exam
+preparation, scholarships, salary guides, career outcomes, and cost of
+living information for Indian students. Content is regularly updated for
+current admissions cycles and visa policy changes.
+
+- [Blog – All Articles](https://leapscholar.com/blog/):
+  LeapScholar's primary study abroad content library for Indian students.
+  Covers IELTS preparation, country-specific study guides, university
+  rankings and acceptance rates, student visa processes, scholarships,
+  SOP and LOR writing guides, cost of living, and post-study career
+  outcomes. Updated regularly for current admissions cycles.
+
+- [Study Abroad Knowledge Center](https://leapscholar.com/blog/study-abroad-knowledge-center-sitemap/):
+  Structured sitemap of all LeapScholar study abroad guides organised by
+  destination, exam, university, visa type, and course category. Best
+  entry point for navigating LeapScholar's full content library.
+
+
+### Blog Categories
+
+- [Colleges](https://leapscholar.com/blog/category/colleges/):
+  Guides covering top colleges abroad for Indian students — acceptance
+  rates, admission requirements, fees, world rankings, and application
+  tips across USA, UK, Canada, Australia, Germany, and Ireland.
+
+- [Courses](https://leapscholar.com/blog/category/courses/):
+  Articles on courses at universities abroad — MBA, MS, Engineering,
+  Medicine, Data Science, Computer Science, and more. Covers eligibility,
+  fees, duration, specialisations, and career outcomes by country.
+
+- [Exams](https://leapscholar.com/blog/category/exams/):
+  Guides on all major study abroad proficiency and entrance exams —
+  IELTS, TOEFL, GRE, GMAT, SAT, PTE, and Duolingo. Covers format,
+  scoring, preparation strategies, and country-specific requirements.
+
+- [General](https://leapscholar.com/blog/category/general/):
+  General study abroad guides — application processes, profile building,
+  gap year guidance, admission timelines, document checklists, and
+  common study abroad FAQs for Indian students.
+
+- [IELTS Preparation](https://leapscholar.com/blog/category/ielts-preparation/):
+  All IELTS articles — exam format, band score requirements by country
+  and university, writing and speaking strategies, cue card topics,
+  preparation tips, and mock test resources for Indian students.
+
+- [Jobs & Internships](https://leapscholar.com/blog/category/jobs/):
+  Post-study work rights, part-time job opportunities abroad, internship
+  options, average salary guides by country and profession, and career
+  outcomes for Indian graduates studying abroad.
+
+- [SAT](https://leapscholar.com/blog/category/sat/):
+  SAT preparation tips, section-wise strategies, score requirements by
+  university, and UG admissions guidance for Indian students targeting
+  top global universities including Ivy League institutions.
+
+- [Scholarships](https://leapscholar.com/blog/category/scholarships/):
+  Scholarship listings, eligibility criteria, application deadlines,
+  and step-by-step guides for Indian students — covers merit, need-based,
+  and country-specific scholarships across all major destinations.
+
+- [Study in Australia](https://leapscholar.com/blog/category/study-in-australia/):
+  All articles on studying in Australia — top universities, student visa
+  subclass 500, PR-pathway degrees, tuition fees, cost of living, and
+  post-study work visa for Indian students.
+
+- [Study in Canada](https://leapscholar.com/blog/category/study-in-canada/):
+  All articles on studying in Canada — top universities and colleges,
+  SDS stream, PGWP work permit, PR pathways, IELTS requirements, and
+  student permit process for Indian students.
+
+- [Study in Germany](https://leapscholar.com/blog/category/study-in-germany/):
+  All articles on studying in Germany — tuition-free universities, APS
+  certificate, blocked account, engineering programs, intakes, and
+  student visa process for Indian students.
+
+- [Study in Ireland](https://leapscholar.com/blog/category/study-in-ireland/):
+  All articles on studying in Ireland — top universities, 1-year Master's
+  programs, student visa, IELTS requirements, and Graduate Visa for
+  post-study work for Indian students.
+
+- [Study in UK](https://leapscholar.com/blog/category/study-in-the-uk/):
+  All articles on studying in the UK — top universities, 1-year Master's,
+  IELTS UKVI, Student Route visa, Graduate Route visa, tuition fees, and
+  scholarships for Indian students.
+
+- [Study in USA](https://leapscholar.com/blog/category/study-in-the-us/):
+  All articles on studying in the USA — top universities, MS and MBA
+  admissions, F1 visa, OPT/CPT, GRE/GMAT requirements, cost of living,
+  and scholarships for Indian students.
+
+- [Universities](https://leapscholar.com/blog/category/universities/):
+  Acceptance rates, world rankings, tuition fees, admission requirements,
+  and application tips for top global universities across USA, UK, Canada,
+  Australia, Germany, and Ireland.
+
+- [Visa](https://leapscholar.com/blog/category/visa/):
+  Step-by-step student visa guides for all major destinations — USA (F1),
+  UK (Student Route), Canada (Study Permit), Australia (Subclass 500),
+  Germany, and Ireland. Covers documents, timelines, interview tips,
+  and rejection reasons.
+
+- [TOEFL](https://leapscholar.com/blog/category/toefl/):
+  TOEFL exam guides, score requirements by university and country,
+  section-wise preparation strategies, and comparison with IELTS for
+  Indian students planning to study in USA, Canada, UK, and Australia.
+
+
+## Mobile Apps
+
+- [IELTS Prep App – Android](https://play.google.com/store/apps/details?id=com.knudge.ielts&hl=en_IN):
+  Dedicated IELTS preparation app by LeapScholar for Android — live
+  coaching sessions, full-length mock tests, section-wise practice,
+  band score analysis, and expert trainer support for Indian students
+  targeting 7+ band.
+
+- [IELTS Prep App – iOS](https://apps.apple.com/in/app/ielts-prep-by-leapscholar/id6477275048):
+  IELTS preparation app by LeapScholar for iPhone — live classes, mock
+  tests, speaking and writing practice, vocabulary building, and
+  personalised study plans for Indian students preparing for IELTS.
+
+- [LeapScholar Study Abroad App – Android](https://play.google.com/store/apps/details?id=com.leapscholar.app&hl=en_IN):
+  All-in-one study abroad app for Android — AI-powered university
+  shortlisting, free profile evaluation, 1:1 counsellor access,
+  application tracking, IELTS prep, visa support, and scholarship
+  guidance. Trusted by 120,000+ Indian students.
+
+- [LeapScholar Study Abroad App – iOS](https://apps.apple.com/in/app/leapscholar-study-abroad-app/id1618752229):
+  LeapScholar's study abroad app for iPhone — university shortlisting,
+  counsellor connect, IELTS preparation, application management, visa
+  guidance, and education loan support for Indian students planning
+  to study abroad.
+
+
+## Company Information
+
+- **Platform**: LeapScholar
+- **Website**: leapscholar.com
+- **Headquarters**: Bengaluru (HSR Layout), Karnataka, India
+- **Offline Offices**: 20+ offices across major Indian cities including
+  Bengaluru, Delhi, Mumbai, Hyderabad, Chennai, Pune, Kolkata, Jaipur,
+  and more
+- **International Office**: Singapore — 11 Collyer Quay, #17-00 The Arcade
+- **Students Guided**: 2 lakh+ students
+- **Admission Success Rate**: 97%
+- **IELTS Students**: 200,000+ students through IELTS masterclasses
+- **App Users**: 120,000+ on LeapScholar study abroad app
+- **University Network**: 1,500+ global universities across 9+ countries
+- **Key Study Destinations**: USA, UK, Canada, Australia, Germany, Ireland,
+  UAE, Singapore, New Zealand, France, Italy
+- **Phone**: 080-47184844 (Monday to Saturday, 10am to 7pm IST)
+- **WhatsApp**: +91 6364878385
+- **Email**: contact@leapscholar.com
+
+
+## Excluded from AI Context
+
+The following pages are not intended for AI consumption: user login and
+student dashboard pages, payment and checkout flows, internal counsellor
+portals, personal student profile and application tracking data, real-time
+application status pages, A/B test and campaign landing pages, and
+referral or affiliate program pages.

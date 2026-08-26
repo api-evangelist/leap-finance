@@ -1,0 +1,86 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  scopes_supported from https://auth.leapfinance.com/.well-known/openid-configuration
+  (HTTP 200, fetched 2026-08-25) — saved verbatim to
+  well-known/leap-finance-openid-configuration.json
+name: Leap Finance OAuth scopes
+description: >-
+  The scopes advertised by Leap Finance Inc.'s Auth0 identity tenant. These are the
+  standard OpenID Connect scopes and standard-claim scopes emitted by an Auth0 tenant
+  with no custom API registered for public use — there is not a single
+  Leap-Finance-specific or resource-specific scope among them.
+
+caveat: >-
+  No scopes-and-permissions reference page exists on the company's site to enrich
+  this from; Leap Finance publishes no developer documentation of any kind. Every
+  entry below is read directly from the live discovery document, and descriptions are
+  the meanings defined by OpenID Connect Core 1.0 §5.4 / RFC 6749, not text the
+  provider wrote.
+
+docs: null
+docs_note: >-
+  Searched leapfinance.com and leapscholar.com for a scopes, permissions or API
+  reference page. None exists — leapfinance.com/docs, /api-docs and /redoc all return
+  the site's soft-404 shell, and no docs.* or developer.* subdomain resolves for
+  either domain.
+
+authorization_server: https://auth.leapfinance.com/
+scope_count: 14
+custom_scopes: 0
+
+scopes:
+  - name: openid
+    standard: OpenID Connect Core 1.0
+    description: Requests an ID Token and identifies the request as an OIDC request.
+  - name: profile
+    standard: OpenID Connect Core 1.0
+    description: >-
+      Requests the default profile claims (name, family_name, given_name, nickname,
+      picture, updated_at and related).
+  - name: email
+    standard: OpenID Connect Core 1.0
+    description: Requests the email and email_verified claims.
+  - name: address
+    standard: OpenID Connect Core 1.0
+    description: Requests the address claim.
+  - name: phone
+    standard: OpenID Connect Core 1.0
+    description: Requests the phone_number and phone_number_verified claims.
+  - name: offline_access
+    standard: OpenID Connect Core 1.0
+    description: Requests a refresh token so the client can obtain tokens without the user present.
+  - name: name
+    standard: OIDC standard claim exposed as a scope by Auth0
+    description: Requests the name claim.
+  - name: given_name
+    standard: OIDC standard claim exposed as a scope by Auth0
+    description: Requests the given_name claim.
+  - name: family_name
+    standard: OIDC standard claim exposed as a scope by Auth0
+    description: Requests the family_name claim.
+  - name: nickname
+    standard: OIDC standard claim exposed as a scope by Auth0
+    description: Requests the nickname claim.
+  - name: email_verified
+    standard: OIDC standard claim exposed as a scope by Auth0
+    description: Requests the email_verified boolean claim.
+  - name: picture
+    standard: OIDC standard claim exposed as a scope by Auth0
+    description: Requests the picture claim.
+  - name: created_at
+    standard: Auth0 profile claim
+    description: Requests the account creation timestamp claim.
+  - name: identities
+    standard: Auth0 profile claim
+    description: >-
+      Requests the identities array describing linked identity-provider accounts.
+
+findings:
+  resource_scopes: 0
+  note: >-
+    The absence of any resource-specific scope is itself the finding. A provider that
+    exposed a programmatic API through this tenant would register an Auth0 API and
+    advertise its permissions here. Leap Finance advertises only identity scopes,
+    which is consistent with the tenant existing solely to log borrowers and staff
+    into first-party web applications.

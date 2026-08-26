@@ -1,0 +1,85 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  Live unauthenticated HTTP responses observed from https://api.leapscholar.com/
+  on 2026-08-25. No OpenAPI exists to derive from and no error reference is published.
+name: Leap Finance error catalog
+description: >-
+  Error envelope observed on the only reachable Leap Finance Inc. API host. This is
+  a PROBE RECORD of what the edge actually returned, not a published catalogue —
+  Leap Finance documents no error codes anywhere.
+
+format: rfc9457
+media_type: application/problem+json
+
+envelope:
+  members: [type, title, status, detail]
+  example_observed: >-
+    {"type":"about:blank","title":"Bad Request","status":400,"detail":"Failed to
+    convert 'preUserId' with value ..."}
+  note: >-
+    `type` is the literal "about:blank", which RFC 9457 §4.2.1 defines as "no
+    additional semantics". Nothing is dereferenceable, so an agent receiving this
+    learns the HTTP status and a human-readable sentence and nothing more. The shape
+    is the Spring Boot 3 default ProblemDetail representation, which the framework
+    emits automatically — it is not evidence of a designed error taxonomy.
+
+host: api.leapscholar.com
+ownership_note: >-
+  api.leapscholar.com is operated by Leap Finance Inc., which states on its own About
+  page (https://leapfinance.com/about, HTTP 200) that it "maintains www.leapscholar.com
+  to offer counselling and related services for study abroad aspirants".
+
+problem_types:
+  - status: 400
+    title: Bad Request
+    type: about:blank
+    media_type: application/problem+json
+    observed_on:
+      - https://api.leapscholar.com/openapi.json
+      - https://api.leapscholar.com/docs
+      - https://api.leapscholar.com/api-docs
+      - https://api.leapscholar.com/robots.txt
+    detail_pattern: "Failed to convert 'preUserId' with value ..."
+    interpretation: >-
+      Unmatched paths fall through to a route with a typed {preUserId} path variable,
+      and the framework fails converting the path segment to that type. The API leaks
+      an internal parameter name in the process.
+    remediation: >-
+      Not actionable by a caller — the endpoint does not exist. Nothing in the
+      response says so, which is the defect: a 400 conversion failure is returned
+      where a 404 is correct.
+
+  - status: 403
+    title: null
+    media_type: null
+    body: empty
+    content_length: 0
+    observed_on:
+      - https://api.leapscholar.com/
+      - https://api.leapscholar.com/v1/openapi.json
+      - https://api.leapscholar.com/.well-known/security.txt
+      - https://api.leapscholar.com/.well-known/openid-configuration
+      - https://api.leapscholar.com/.well-known/agent-card.json
+    headers_observed:
+      x-content-type-options: nosniff
+      x-frame-options: DENY
+      x-xss-protection: '0'
+      cache-control: no-cache, no-store, max-age=0, must-revalidate
+    interpretation: >-
+      Authorization denial with a zero-length body and NO WWW-Authenticate header, so
+      the response does not tell a client what credential to present. Note this 403
+      abandons the RFC 9457 envelope the 400 uses — the same API answers in two
+      different error formats depending on which rejection fires.
+    remediation: >-
+      Not actionable without credentials. No public path exists to obtain them.
+
+coverage:
+  documented_error_codes: 0
+  observed_statuses: [400, 403]
+  catalog_published: false
+  note: >-
+    Leap Finance publishes no error reference, no status-code table and no error-code
+    registry on any host. Everything above was observed by probing, not read from
+    documentation. Only two statuses were reachable without credentials, so this is a
+    floor on the real error surface, not a description of it.

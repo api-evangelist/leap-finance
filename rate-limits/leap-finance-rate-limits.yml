@@ -1,0 +1,45 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  Response headers observed on live unauthenticated requests to
+  https://api.leapscholar.com/ and https://leapfinance.com/ , plus a documentation
+  search across leapfinance.com and leapscholar.com — 2026-08-25.
+name: Leap Finance rate limits
+description: >-
+  No rate limits are published and none were observed. Leap Finance operates no
+  public API and publishes no developer documentation, so there is no limit for an
+  integrator to design against.
+
+limit_count: 0
+
+limits: []
+
+response_headers:
+  observed: []
+  probed_for:
+    - X-RateLimit-Limit
+    - X-RateLimit-Remaining
+    - X-RateLimit-Reset
+    - RateLimit-Limit
+    - RateLimit-Remaining
+    - RateLimit-Reset
+    - RateLimit-Policy
+    - Retry-After
+  finding: >-
+    None of these headers appeared on any response from api.leapscholar.com,
+    auth.leapfinance.com or leapfinance.com. Responses observed from
+    api.leapscholar.com carried only x-content-type-options, x-frame-options,
+    x-xss-protection, cache-control, pragma, expires and the CORS vary headers.
+
+exhaustion_status_code: unknown
+note: >-
+  No 429 was induced. This pipeline does not generate load against a live provider to
+  discover a limit, so the absence of an observed 429 says nothing about whether one
+  exists — only that no limit is advertised in headers or documentation.
+
+documentation:
+  published: false
+  evidence: >-
+    No developer documentation exists on any Leap Finance host. leapfinance.com/docs
+    and /api-docs return the site's soft-404 HTML shell; leapscholar.com/docs returns
+    HTTP 404; no docs.* or developer.* subdomain resolves for either domain.

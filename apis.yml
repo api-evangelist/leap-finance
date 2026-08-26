@@ -1,17 +1,31 @@
 aid: leap-finance
 name: Leap Finance
-description: 'Leap Finance is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Leap Finance Inc. is a Bengaluru- and US-incorporated fintech that underwrites
+  collateral-free education loans for Indian students pursuing graduate study abroad,
+  underwriting on future earning potential and academic profile rather than family
+  assets or collateral. The company originates and services study-abroad student loans
+  covering tuition, living costs and travel, and also maintains www.leapscholar.com,
+  its study-abroad counselling and IELTS preparation property. Leap Finance operates
+  as a direct-to-consumer lender: it publishes a consumer web application, a partner
+  portal and an Auth0-backed identity tenant, but does not operate a public developer
+  program, publish API documentation, or ship a machine-readable API contract.'
 url: https://raw.githubusercontent.com/api-evangelist/leap-finance/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-25'
 modified: '2026-08-25'
+image: https://d3qj1pefcqovqy.cloudfront.net/61a5bb0516b045285e37ec59_logo_leap_1_2_8731b923b7.png
 tags:
 - Company
+- Financial Services
+- Lending
+- Student Loans
+- Education Finance
+- Fintech
+- Consumer Finance
+- Study Abroad
+- India
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +33,70 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/leap-finance-domain-security.yml
 - type: Website
-  url: https://www.hiive.com/securities/leap-finance-stock
+  url: https://leapfinance.com/
+- type: About
+  url: https://leapfinance.com/about
+- type: Support
+  url: https://leapfinance.com/faq
+- type: SignUp
+  url: https://leapfinance.com/login
+- type: TermsOfService
+  url: https://leapfinance.com/terms
+- type: PrivacyPolicy
+  url: https://leapfinance.com/privacy
+- type: GitHubOrganization
+  url: https://github.com/leapfinance
+- type: Blog
+  url: https://leapscholar.com/blog
+- type: LLMsTxt
+  url: llms/leap-finance-llms.txt
+- type: WellKnown
+  url: well-known/leap-finance-well-known.yml
+- type: Packages
+  url: packages/leap-finance-packages.yml
+- type: Authentication
+  url: authentication/leap-finance-authentication.yml
+- type: OAuthScopes
+  url: scopes/leap-finance-scopes.yml
+- type: Conformance
+  url: conformance/leap-finance-conformance.yml
+- type: ErrorCatalog
+  url: errors/leap-finance-problem-types.yml
+- type: Conventions
+  url: conventions/leap-finance-conventions.yml
+- type: Lifecycle
+  url: lifecycle/leap-finance-lifecycle.yml
+- type: Plans
+  url: plans/leap-finance-plans-pricing.yml
+- type: RateLimits
+  url: rate-limits/leap-finance-rate-limits.yml
+x-enrichment:
+  date: '2026-08-25'
+  status: enriched
+  artifacts_added: 15
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Leap Finance Inc. is a direct-to-consumer education lender with no developer
+    program of any kind — no docs.* or developer.* host resolves for either
+    leapfinance.com or leapscholar.com, and the only reachable API host,
+    api.leapscholar.com, is a private application backend that answers every
+    unauthenticated request with a bare HTTP 403 or a Spring Boot path-variable
+    conversion error.
+  evidence:
+    - url: https://leapfinance.com/api-docs
+      status: 200
+    - url: https://leapscholar.com/openapi.json
+      status: 404
+    - url: https://api.leapscholar.com/
+      status: 403
+    - url: https://api.leapscholar.com/openapi.json
+      status: 400
+    - url: https://auth.leapfinance.com/.well-known/openid-configuration
+      status: 200
+  checked: '2026-08-25'

@@ -1,0 +1,93 @@
+generated: '2026-08-25'
+method: probed
+source: >-
+  DNS enumeration and HTTP probes across leapfinance.com and leapscholar.com hosts,
+  2026-08-25.
+name: Leap Finance lifecycle
+description: >-
+  Versioning, deprecation, status and SLA posture for Leap Finance Inc. Every element
+  is absent. This file records the absence with the probes that established it, so a
+  reader can see the surface was checked rather than skipped.
+
+versioning:
+  policy_published: false
+  scheme: uri-path (inferred, not documented)
+  evidence: >-
+    api.leapscholar.com routes a /v1/ prefix — https://api.leapscholar.com/v1/openapi.json
+    returns HTTP 403 (authorization denial, i.e. the route matched) whereas unversioned
+    unknown paths return HTTP 400 with a path-variable conversion failure. The prefix
+    exists; no policy describing it is published.
+  current_version: unknown
+
+deprecation:
+  policy_published: false
+  sunset_header_rfc8594: not_observed
+  deprecation_header: not_observed
+  evidence: >-
+    No Sunset or Deprecation response header was present on any observed response
+    from api.leapscholar.com, leapfinance.com or leapscholar.com. No deprecation,
+    changelog or migration page exists on any host.
+  deprecated_operations: []
+  note: >-
+    No `Deprecation` pointer is emitted in apis.yml, because no deprecation policy is
+    published.
+
+status_page:
+  published: false
+  evidence: >-
+    status.leapfinance.com and status.leapscholar.com do not resolve in DNS
+    (NXDOMAIN, checked 2026-08-25). No statuspage.io, status.io, instatus or
+    Better Stack property was found for either domain, and neither site links to one.
+  note: >-
+    No `StatusPage` pointer is emitted in apis.yml, because no status page exists.
+
+sla:
+  published: false
+  evidence: >-
+    https://leapfinance.com/terms (HTTP 200) is a consumer website terms-of-use
+    document. It sets no availability, uptime or support-response commitment, and
+    contains no API terms.
+
+changelog:
+  published: false
+  evidence: >-
+    No changelog, release-notes or "what's new" page exists. leapfinance.com/blog
+    returns the site's soft-404 shell (HTTP 200, body "Oops! The page you were
+    looking for doesn't exist"). The only dated content stream operated by the
+    company is the LeapScholar consumer blog at https://leapscholar.com/blog
+    (HTTP 200), which publishes study-abroad editorial rather than product or API
+    release notes.
+
+support:
+  channels:
+    - type: email
+      value: contact@leapfinance.com
+      source: https://leapfinance.com/ (site header, HTTP 200)
+    - type: phone
+      value: '+91 80 4718 4844'
+      source: https://leapfinance.com/ (site header, HTTP 200)
+    - type: phone
+      value: '+91 82083 75580'
+      source: https://leapfinance.com/ (site header, HTTP 200)
+    - type: whatsapp
+      value: https://api.whatsapp.com/send?phone=918208375580
+      source: https://leapfinance.com/ (site footer link, HTTP 200)
+    - type: faq
+      value: https://leapfinance.com/faq
+      status: 200
+      note: >-
+        The page renders but its content does not load — the FAQ body displays
+        "Error fetching FAQs at the momemt. Please try again later" (the provider's
+        own spelling), observed 2026-08-25. The page is live; the content behind it
+        is broken.
+  developer_support: none
+  note: All channels are consumer borrower support. No developer or partner technical support channel is published.
+
+code_repositories:
+  - url: https://github.com/leapfinance/spring-api-versioning
+    last_updated: '2021-09-30'
+    state: dormant
+  - url: https://github.com/leapfinance/chrononJs
+    last_updated: '2022-02-16'
+    state: dormant
+    description: JavaScript Date Lib
