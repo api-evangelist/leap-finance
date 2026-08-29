@@ -12,6 +12,17 @@ description: 'Leap Finance Inc. is a Bengaluru- and US-incorporated fintech that
 url: https://raw.githubusercontent.com/api-evangelist/leap-finance/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-08-25'
 modified: '2026-08-25'
