@@ -44,7 +44,7 @@ modified: '2026-08-25'
 image: https://d3qj1pefcqovqy.cloudfront.net/61a5bb0516b045285e37ec59_logo_leap_1_2_8731b923b7.png
 tags:
 - Company
-- Financial-Services
+- Financial Services
 - Lending
 - Student Loans
 - Education Finance
@@ -62,6 +62,7 @@ tags_raw:
 - Consumer Finance
 - Study Abroad
 - India
+- Financial-Services
 apis: []
 maintainers:
 - FN: Kin Lane
